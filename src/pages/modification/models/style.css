@@ -1,0 +1,301 @@
+.edit-modal {
+  width: 100%;
+  /* height: 100%; */
+  /* overflow: scroll; */
+
+  /* position: relative; */
+}
+.edit-form {
+  /* position: absolute; */
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+  height: 100%;
+  overflow: scroll;
+  gap: 20px;
+}
+.edit-form form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.edit-form .form-box {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 5px 0;
+  /* background-color: #00bfff;/ */
+}
+.edit-form .form-box label {
+  width: 100%;
+}
+.edit-form .form-box label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  background: #fff;
+  border-radius: 5px;
+  /* background-color: #000; */
+}
+
+.edit-form .form-box label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.edit-form .form-box label .input:placeholder-shown + span {
+  top: 0px;
+  font-size: 0.9em;
+}
+
+.edit-form .form-box label .input:focus + span,
+.edit-form .form-box label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.edit-form .form-box label .input:valid + span {
+  color: green;
+}
+.edit-form .box-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  padding: 8.5px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.edit-form .box-content .inputs-group {
+  width: fit-content;
+}
+.edit-form .box-content.production {
+  transition: 0.3s linear;
+  border: 2px solid #8b4513;
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.edit-form .box-content.constat {
+  width: auto;
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.edit-form .box-content.constat .inputs-group {
+  width: 100%;
+}
+.edit-form .box-content.production {
+  width: auto;
+}
+.edit-form .box-content.production .inputs-group {
+  width: 90%;
+}
+.edit-form .box-content.viability {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  width: auto;
+}
+.edit-form .box-content.viability .inputs-group {
+  width: 90%;
+}
+.edit-form .box-content.consommation {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  width: auto;
+}
+.edit-form .box-content.consommation .inputs-group {
+  width: 90%;
+}
+.edit-form .box-content.reforme {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  width: auto;
+}
+.edit-form .box-content.reforme .inputs-group {
+  width: 90%;
+}
+.edit-form .box-content.ambiance {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  width: auto;
+}
+.edit-form .box-content.ambiance .inputs-group {
+  width: 90%;
+}
+/* Edit Observation */
+.edit-observ-container {
+  /* background: #9b9b9b; */
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 1px;
+  flex-direction: column;
+}
+.edit-observ-container div {
+  display: flex;
+}
+.edit-observ-container .radio-button-form {
+  /* background-color: #007bff; */
+  padding: 10px 4px;
+  gap: 4px;
+}
+.edit-observ-container .add {
+  /* position: absolute; */
+  border: none;
+  background-color: #c2f3b65c;
+  margin-left: 20px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  color: #2d7a0c;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.edit-observ-container .add:hover {
+  transition: 0.3s linear;
+  background-color: var(--green-color);
+  color: #fff;
+}
+/* ! OBSERVATION BOX CONTENT */
+.edit-inputs-container .observation-box {
+  /* background: #eeee; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.edit-inputs-container .observation-box > div {
+  display: flex;
+  gap: 8px;
+}
+/* ! OBSERVATION BOX CONTENT */
+.observation-box .delete {
+  margin: 0;
+  border: 0;
+  color: var(--red-color);
+  padding: 4px;
+  cursor: pointer;
+  font-size: 35px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 0.5px solid var(--red-color);
+}
+.observation-box .delete:hover {
+  transition: 0.4s ease-in-out;
+  font-size: 40px;
+  background-color: var(--red-color);
+  color: #fff;
+}
+.observation-box .edit {
+  margin: 0;
+  border: 0;
+  color: #e86a33;
+  padding: 4px;
+  cursor: pointer;
+  font-size: 35px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 0.5px solid #e86a33;
+}
+.observation-box .edit:hover {
+  transition: 0.4s ease-in-out;
+  font-size: 40px;
+  background-color: #e86a33;
+  color: #fff;
+}
+
+.edit-form .submit {
+  position: absolute;
+  top: 98%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  background-color: #3366cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-form .submit:hover {
+  background-color: #27408b;
+}
+
+.show-observ {
+  background: #eee;
+  padding: 2px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.show-observ button {
+  border: none;
+  cursor: pointer;
+}
+.confirm-modal.modal {
+  border-color: var(--dark-blue);
+  position: relative;
+}
+.confirm-modal.modal .boxes {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.confirm-modal.modal .boxes .box {
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.box-selected {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+}
+.table-detail {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: var(--border-radius);
+}
+.table-detail thead th {
+  background-color: #757de8;
+  color: #ffffff;
+  border: 1px solid #000;
+  padding: 2px 6px;
+}
+.table-detail tbody td {
+  background-color: #fff;
+  color: #333333;
+  border: 1px solid #000;
+  padding: 2px 6px;
+  font-size: 15px;
+}
+
+fieldset {
+  border-radius: 4px;
+  /* width: 100%; */
+}
+
+.edit-site .edit-btn-position {
+  position: absolute;
+  top: 90%;
+}

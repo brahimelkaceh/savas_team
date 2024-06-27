@@ -1,0 +1,199 @@
+.edit-modal {
+  margin: 5px;
+  border-radius: var(--border-radius);
+  width: 400px;
+}
+.delete-modal {
+  /* width: 100%; */
+  padding: 10px;
+  border-top: 6px solid var(--red-color);
+  background: #f5f5f5;
+  grid-area: create-user;
+  border-radius: var(--border-radius);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  text-align: center;
+}
+.delete-modal h1 {
+  color: #991b1b;
+  text-transform: uppercase;
+}
+.delete-modal p {
+  font-size: 15px;
+  margin: 10px 0;
+  word-spacing: 2px;
+  line-height: 22px;
+  color: #374151;
+}
+.btns {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+.edit-btn {
+  font-size: 18px;
+  background: #22c55e;
+  color: white;
+  padding: 7px 15px;
+  /* padding-left: 0.9em; */
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.edit-btn:hover {
+  background: #22c55e;
+}
+.edit-btn:disabled,
+.edit-btn:disabled:hover {
+  cursor: not-allowed;
+  background-color: var(--primary-grey);
+}
+.edit-btn span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.edit-btn svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.edit-btn:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.edit-btn:hover svg {
+  transform: translateX(2px) rotate(-90deg) scale(1.1);
+}
+
+.edit-btn:hover span {
+  transform: translateX(5em);
+}
+
+.edit-btn:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(-2px);
+  }
+
+  to {
+    transform: translateY(4px);
+  }
+}
+
+.cancel-btn {
+  font-size: 18px;
+  background: none;
+  color: #dc2626;
+  padding: 7px 10px;
+  /* padding-left: 0.9em; */
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin: 5px;
+  margin-bottom: 0;
+  border: 2px solid #dc2626;
+}
+
+.cancel-btn:hover {
+  border: 2px solid #dc2626;
+  /* background: #dc2626; */
+  color: #991b1b;
+}
+
+.delete-btn {
+  font-size: 18px;
+  background: #dc2626;
+  color: white;
+  padding: 7px 15px;
+  /* padding-left: 0.9em; */
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+.delete-btn:disabled,
+.delete-btn:disabled:hover {
+  cursor: not-allowed;
+  background-color: var(--primary-grey);
+}
+.delete-btn span {
+  display: block;
+  margin-left: 0.5em;
+  transition: all 0.3s ease-in-out;
+}
+
+.delete-btn svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.delete-btn:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.delete-btn:hover svg {
+  transform: translateX(5px) rotate(45deg) scale(1.1);
+}
+
+.delete-btn:hover span {
+  transform: translateX(0.5em);
+}
+
+.delete-btn:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(-2px);
+  }
+
+  to {
+    transform: translateY(4px);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .edit-modal {
+    margin: 5px;
+    border-radius: var(--border-radius);
+    width: 70%;
+  }
+  .delete-modal {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .edit-modal {
+    margin: 5px;
+    border-radius: var(--border-radius);
+    width: 90%;
+  }
+  .delete-modal {
+    width: auto;
+  }
+}

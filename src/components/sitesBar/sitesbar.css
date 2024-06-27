@@ -1,0 +1,107 @@
+.sites-bar {
+  /* background-color: var(--bar-blue); */
+  background-color: rgb(25, 118, 210, 0.3);
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  /* height: 10vh; */
+}
+.site-button {
+  font-size: 18px !important;
+  color: var(--dark-blue) !important;
+  font-family: inherit !important;
+  font-weight: 600 !important;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  padding: 14px;
+  width: 100%;
+  text-align: center;
+}
+.site-button:disabled {
+  background-color: #e6e8e8;
+  cursor: not-allowed;
+  color: #888;
+}
+.site-button:disabled:hover {
+  color: #888;
+}
+.site-button:disabled::after {
+  color: #888;
+  height: 0;
+}
+.btn-clicked {
+  font-size: 18px !important;
+  color: #ff6000 !important;
+  font-family: inherit !important;
+  background-color: #fff !important;
+  font-weight: 600 !important;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  padding: 14px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid var(--dark-blue) !important;
+}
+
+.site-button:focus,
+.site-button:hover {
+  color: var(--dark-blue) !important;
+}
+
+.site-button:focus:after,
+.site-button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.site-button:after {
+  content: "";
+  pointer-events: none;
+  bottom: 0px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px !important;
+  background-color: var(--dark-blue) !important;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+@media screen and (max-width: 767px) {
+  .site-button {
+    font-size: 12px;
+    padding: 8px;
+  }
+  .btn-clicked {
+    font-size: 15px;
+    padding: 8px;
+  }
+}
+.css-69z67c-MuiTabs-scroller {
+  height: auto !important;
+}
+.css-1ujnqem-MuiTabs-root {
+  width: 100%;
+}
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  border-top: 6px solid var(--red-color);
+  background: #f5f5f5;
+  grid-area: create-user;
+  border-radius: var(--border-radius);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  text-align: center;
+}
+.css-ypiqx9-MuiDialogContent-root {
+  padding: 0 20px !important;
+}

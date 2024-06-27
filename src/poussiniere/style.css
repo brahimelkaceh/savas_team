@@ -1,0 +1,41 @@
+.e-headercell {
+  background-color: #b6ccd8 !important;
+  color: rgb(3, 2, 2);
+  height: 25px !important;
+  padding: 0 5px 0 !important;
+}
+span.e-headertext {
+  font-size: 10px !important;
+}
+.e-unfreeze {
+  color: rgb(3, 2, 2);
+  z-index: 100000;
+  color: #1e1e1e !important;
+}
+.e-grid .e-rowcell {
+  padding: 4px !important;
+  font-size: 12px !important;
+}
+
+.custom-ambiance-class {
+  background: #61dafb !important;
+  color: #22223b !important;
+}
+.custom-viability-class {
+  background: #ffe0c8 !important;
+  color: #0d1f2d !important;
+  padding: 0 !important;
+}
+.custom-consommation-class {
+  background: #61bc84 !important;
+}
+.custom-ic-class {
+  background: #ffe992 !important;
+}
+.e-headercell:has(.custom-action-class) {
+  background: #4d3c77 !important;
+}
+
+.custom-calendrier-class {
+  background-color: #ff7f50 !important;
+}

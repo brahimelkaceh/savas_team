@@ -1,0 +1,20 @@
+.top-drawer {
+  background-color: #fff !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  /* font-size: 50px; */
+  /* width: 50px; */
+  position: relative;
+  z-index: 1;
+}
+body
+  > div.MuiDrawer-root.MuiDrawer-modal.MuiModal-root.css-1u2w381-MuiModal-root-MuiDrawer-root
+  > div.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation16.MuiDrawer-paper.MuiDrawer-paperAnchorBottom.css-9emuhu-MuiPaper-root-MuiDrawer-paper {
+  height: 80%;
+}
+
+.drawer-container .form {
+  padding-top: 40px;
+  width: 80%;
+}

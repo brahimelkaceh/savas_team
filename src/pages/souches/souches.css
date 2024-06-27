@@ -1,0 +1,369 @@
+.souche-container {
+  margin: 0 25px;
+}
+.guide-container {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: var(--border-radius);
+  margin: 10px 0;
+  margin-bottom: 25px;
+}
+.guide-table {
+  padding-top: 0;
+  max-height: 225px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  width: 50%;
+}
+.guide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px;
+  padding: 2px 10px;
+  /* background: #eee; */
+  border-radius: var(--border-radius);
+  border: 1px solid #6b7280;
+}
+.guide-img {
+  width: 80px;
+}
+.guide-souche-name {
+  color: #000;
+  font-style: italic;
+  font-size: 22px;
+  font-weight: bold;
+}
+.guide-name {
+  font-size: 18px;
+  color: #4b5563;
+}
+
+.souche-table {
+  /* position: absolute; */
+  position: relative;
+  /* width: 100%; */
+
+  background: #ffffff;
+  border-radius: var(--border-radius);
+  padding: 15px;
+  padding-top: 0;
+  /* min-height: 320px; */
+  height: 480px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+.souche-table table {
+  /* margin: 15px; */
+  border-collapse: collapse;
+}
+.souche-table th {
+  font-size: 12px;
+  text-align: center;
+  border-right: 0.5px solid #000;
+  border-left: 0.5px solid #000;
+  /* border-bottom: 2px solid #000; */
+
+  padding: 4px;
+}
+
+.souche-table td {
+  border-left: 0.5px solid #000;
+  border-right: 0.5px solid #000;
+  /* border-bottom: 2px solid #000; */
+
+  font-size: 13px !important;
+}
+.souche-table tr:nth-child(even) {
+  background: #f5efe8;
+}
+
+.souche-table td {
+  border-bottom: 1px solid #1f2937;
+  border-collapse: separate;
+  text-align: center;
+  padding: 4px 10px;
+  color: #111827;
+  cursor: default;
+  font-size: 18px;
+}
+
+.souche-table .fixed-header {
+  background: #61c0bf;
+  padding-top: 15px !;
+}
+.souche-table thead tr {
+  /* background: #fff; */
+  white-space: nowrap;
+}
+.souche-table tbody tr {
+  background: #fff;
+  white-space: nowrap;
+}
+.guide-table .active {
+  /* background: #86efac; */
+  border: 2px solid #15803d;
+}
+.guide-table .active .guide-name {
+  color: #000000;
+}
+
+.switch-guide {
+  --button-width: 40px;
+  --button-height: 20px;
+  --toggle-diameter: 18px;
+  --button-toggle-offset: calc(
+    (var(--button-height) - var(--toggle-diameter)) / 2
+  );
+  --toggle-shadow-offset: 10px;
+  --toggle-wider: 30px;
+  --color-grey: #cccccc;
+  --color-green: #42f489;
+}
+
+.slider-guide {
+  display: inline-block;
+  width: var(--button-width);
+  height: var(--button-height);
+  background-color: var(--color-grey);
+  border-radius: calc(var(--button-height) / 2);
+  position: relative;
+  transition: 0.3s all ease-in-out;
+}
+
+.slider-guide::after {
+  content: "";
+  display: inline-block;
+  width: var(--toggle-diameter);
+  height: var(--toggle-diameter);
+  background-color: #fff;
+  border-radius: calc(var(--toggle-diameter) / 2);
+  position: absolute;
+  top: var(--button-toggle-offset);
+  transform: translateX(var(--button-toggle-offset));
+  box-shadow: var(--toggle-shadow-offset) 0
+    calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+  transition: 0.3s all ease-in-out;
+}
+
+.switch-guide input[type="checkbox"]:checked + .slider-guide {
+  background-color: var(--color-green);
+}
+
+.switch-guide input[type="checkbox"]:checked + .slider-guide::after {
+  transform: translateX(
+    calc(
+      var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)
+    )
+  );
+  box-shadow: calc(var(--toggle-shadow-offset) * -1) 0
+    calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+}
+
+.switch-guide input[type="checkbox"] {
+  display: none;
+}
+
+.switch-guide input[type="checkbox"]:active + .slider-guide::after {
+  width: var(--toggle-wider);
+}
+
+.switch-guide input[type="checkbox"]:checked:active + .slider-guide::after {
+  transform: translateX(
+    calc(
+      var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)
+    )
+  );
+}
+
+.eye-icon {
+  color: #2563eb;
+  font-size: 22px;
+  margin: 0 4px;
+  cursor: pointer;
+  /* margin: 3px; */
+}
+.edit-icon {
+  color: #f1962f;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.guide-action {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.souche-header {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-btn {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #86efac;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
+  border: none;
+}
+
+.bell {
+  width: 38px;
+  font-size: 30px;
+}
+
+.add-btn:hover {
+  background-color: #15803d;
+}
+
+.add-btn:hover .bell {
+  animation: bellRing 0.9s both;
+}
+
+/* bell ringing animation keyframes*/
+@keyframes bellRing {
+  0%,
+  100% {
+    transform-origin: top;
+  }
+
+  15% {
+    transform: rotateZ(10deg);
+  }
+
+  30% {
+    transform: rotateZ(-10deg);
+  }
+
+  45% {
+    transform: rotateZ(5deg);
+  }
+
+  60% {
+    transform: rotateZ(-5deg);
+  }
+
+  75% {
+    transform: rotateZ(2deg);
+  }
+}
+
+.add-btn:active {
+  transform: scale(0.8);
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-in-hor-center
+ * ----------------------------------------
+ */
+
+.scale-in-hor-center {
+  -webkit-animation: scale-in-hor-center 0.5s linear 1s alternate backwards;
+  animation: scale-in-hor-center 0.5s linear 1s alternate backwards;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-6-3 17:28:5
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@-webkit-keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+/**
+ * ----------------------------------------
+ * animation tracking-in-contract-bck-top
+ * ----------------------------------------
+ */
+.tracking-in-contract-bck-top {
+  -webkit-animation: tracking-in-contract-bck-top 1s
+    cubic-bezier(0.215, 0.61, 0.355, 1) alternate both;
+  animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1)
+    alternate both;
+  color: #616161;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-6-3 17:58:54
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@-webkit-keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}

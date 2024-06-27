@@ -1,0 +1,61 @@
+.send-btn {
+  font-size: 18px;
+  background: var(--hover-blue);
+  color: white;
+  padding: 7px 10px;
+  /* padding-left: 0.9em; */
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.send-btn:hover {
+  background: var(--dark-blue);
+}
+.send-btn:disabled,
+.send-btn:disabled:hover {
+  cursor: not-allowed;
+  background-color: var(--primary-grey);
+}
+.send-btn span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.send-btn svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.send-btn:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.send-btn:hover svg {
+  transform: translateX(2px) rotate(-90deg) scale(1.1);
+}
+
+.send-btn:hover span {
+  transform: translateX(5em);
+}
+
+.send-btn:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(-2px);
+  }
+
+  to {
+    transform: translateY(4px);
+  }
+}

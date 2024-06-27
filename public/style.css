@@ -1,0 +1,9 @@
+.download.download-btn {
+  display: none;
+  color: #fff;
+  z-index: 10000 !important;
+}
+
+body {
+  background-color: red !important;
+}

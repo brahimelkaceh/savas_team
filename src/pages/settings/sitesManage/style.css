@@ -1,0 +1,21 @@
+.add__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 8px;
+  background-color: #22c55e;
+  transition: 0.3s linear;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.add__button:hover {
+  background-color: #15803d;
+}

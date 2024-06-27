@@ -1,0 +1,51 @@
+{
+  "name": "SAVAS",
+  "short_name": "SAVAS",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#eee",
+  "theme_color": "#003c65",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/imgs/logo.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "/imgs/logo.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/imgs/logo.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/imgs/logo.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/imgs/logo.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "/imgs/logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/imgs/logo.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "/imgs/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

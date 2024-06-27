@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap");
+@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-calendars/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-navigations/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-popups/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-notifications/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-grids/styles/material.css";
+* {
+  --dark-blue: #0085ff;
+  /* --dark-blue: #0072cf; */
+  --background-color: #efefef;
+  --light-blue: #a3aed0;
+  --hover-blue: #13c0ff;
+  --secondary-hover-blue: #04a8e4;
+  --bar-blue: #97deff;
+  --light-green: #2b7a0b;
+  --hover-green: #275f10;
+  --hover-background: #004370;
+  --primary-grey: rgb(116, 116, 116);
+  --secondary-grey: rgb(180, 180, 180);
+  --red-color: #eb455f;
+  --green-color: #368753;
+  --border-radius: 4px;
+  --box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+html,
+body,
+:root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* font-family: "Oxanium", cursive;
+  font-family: Helvetica, sans-serif; */
+
+  font-family: "DM Sans", Helvetica, Arial, sans-serif;
+  /* font-family: "Roboto Mono", monospace; */
+  /* font-family: "Lato", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif; */
+  /* background-color: var(--background-color); */
+  /* background-image: url("https://img.freepik.com/free-photo/white-https://img.freepik.com/free-vector/hand-painted-watercolor-abstract-watercolor-background_23-2149009911.jpg?w=1060&t=st=1684515726~exp=1684516326~hmac=ab6a9f0a497aee81a19caab5b2f8ac3be48c8aac103a0d6392f6aacfdd0c8163painted-wall-texture-background_53876-138197.jpg?w=1060&t=st=1684515579~exp=1684516179~hmac=3cf3edccd4be6d69dc9a8307b1583f8c0de4f60caf2bf7c01452ffeefaaaa9a6") !important; */
+  color: var(--dark-blue);
+  background-color: var(--background-color);
+  /* background-image: linear-gradient(
+      rgba(243, 243, 243, 0.149),
+      rgba(243, 243, 243, 0.197)
+    ), */
+  /* url("https://img.freepik.com/free-photo/colorful-abstract-textured-background-design_53876-108265.jpg?w=1060&t=st=1684517079~exp=1684517679~hmac=383dcdf7c62f6358fcd4b12661c9bfa660a9cf5d22aeb7975e402f3bacfeb4ed"); */
+  /* url("https://img.freepik.com/free-vector/realistic-white-golden-geometric-background_79603-2032.jpg?w=1060&t=st=1685281655~exp=1685282255~hmac=8eebe9430cbbe91ffb82cb81881c7006d7a4c1c0ed92eec00a7dcd6f59581f77"); */
+  /* url("https://img.freepik.com/free-vector/banner-with-low-poly-design_1048-12618.jpg?w=1380&t=st=1685282360~exp=1685282960~hmac=7b59cc7ec2d3496a9099a42615b75f2c5c26ff3aa2d23ef769f3a7d3f4204695"); */
+  /* url("https://img.freepik.com/free-photo/stylish-soft-blue-curve-lines-abstract-background_1017-19950.jpg?w=1380&t=st=1685972215~exp=1685972815~hmac=d70272dc042b6cb2366ade2f8ffce86623c54c3007863397f6b12f52c2b3e1b1"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: blur(2px); */
+  /* overflow-y: scroll; */
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  display: inline;
+}
+h3 {
+  margin: 0;
+}
+
+.app {
+  /* display: flex;
+  position: relative; */
+  /* flex-direction: column; */
+  width: 100%;
+  height: 100vh;
+}
+
+/*  ! global classes */
+
+/* ! section */
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  position: absolute;
+  top: var(--swiper-navigation-top-offset, 50%);
+  /* width: calc(var(--swiper-navigation-size) / 44 * 27); */
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+  z-index: 10;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #ffffff2c;
+  padding: 0px 15px;
+  border-radius: 4px;
+}
+
+#chartDiv .swiper-button-next::after,
+#chartDiv .swiper-button-prev::after {
+  position: absolute;
+  top: var(--swiper-navigation-top-offset, 50%);
+  /* width: calc(var(--swiper-navigation-size) / 44 * 27); */
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+  z-index: 10;
+  font-size: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-blue);
+  /* background-color: var(--bar-blue); */
+  padding: 0px 10px;
+  border-radius: 4px;
+}
+
+.swiper-button-prev {
+  left: 75%;
+  top: 7%;
+}
+.swiper-button-next {
+  right: 10px;
+  top: 7%;
+}
+#chartDiv .swiper-button-prev {
+  left: 0%;
+  top: 4%;
+}
+#chartDiv .swiper-button-next {
+  right: 0px;
+  top: 4%;
+}
+
+.css-tkn350-MuiTabs-root {
+  height: fit-content !important;
+  min-height: fit-content !important;
+}
+.css-1e7cuzv-MuiFormControl-root {
+  margin: 1px !important;
+}
+.error-message {
+  color: #f44336;
+}
+.css-j204z7-MuiFormControlLabel-root {
+  margin: 0 !important;
+}
+.css-o4b71y-MuiAccordionSummary-content {
+  margin: 0 !important;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

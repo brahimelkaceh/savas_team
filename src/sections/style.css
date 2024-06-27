@@ -1,0 +1,54 @@
+/* Table Headers */
+.css-18nz61b-MuiTableHead-root th {
+  border: none;
+}
+.calendrie {
+  background: #f2b844;
+}
+
+.reforme {
+  background-color: #a6949458;
+}
+.sticky-header {
+  position: sticky;
+  /* top: 0; */
+  width: 100%;
+  z-index: 100;
+  /* overflow: scroll; */
+}
+
+#chart {
+  height: 100% !important;
+  width: 100% !important;
+}
+#chart_alt {
+  height: 100% !important;
+  width: 100% !important;
+}
+#chart_conso {
+  height: 100% !important;
+  width: 100% !important;
+}
+#chart_homog {
+  height: 100% !important;
+  width: 100% !important;
+}
+#chart_mort {
+  height: 100% !important;
+  width: 100% !important;
+}
+#chart_masse {
+  height: 100% !important;
+  width: 100% !important;
+}
+#chart_temp {
+  height: 100% !important;
+  width: 100% !important;
+}
+#chart_light {
+  height: 100% !important;
+  width: 100% !important;
+}
+#chart_mort_ChartBorder {
+  height: 100% !important;
+}

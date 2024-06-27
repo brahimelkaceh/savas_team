@@ -1,0 +1,35 @@
+/* Assuming you have a class named 'custom-select' for the select element */
+.custom-select {
+  color: #333; /* Default color for unselected options */
+}
+
+/* Style the selected option */
+.custom-select option:checked {
+  background-color: #4caf50; /* Change to your desired color */
+  color: #fff; /* Change to your desired color */
+}
+
+.isWeekBackground {
+  background-color: #fefdf9;
+  border-bottom: 4px solid #000;
+  border-top: 2px solid #000;
+}
+
+.isdayBackground {
+  background-color: #fef39fbd;
+}
+.isdayBackground:first-child {
+  border-top: 4px solid #000;
+}
+.isdayBackground td,
+.isWeekBackground td {
+  font-weight: bold !important;
+}
+.css-sox5kk-MuiBackdrop-root {
+  background-color: rgb(0 0 0 / 10%) !important;
+}
+.css-tsm4f {
+  box-shadow: 0px 11px 15px -7px rgba(55, 55, 55, 0),
+    0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0) !important;
+  width: 50%;
+}

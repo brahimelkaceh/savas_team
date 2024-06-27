@@ -1,0 +1,42 @@
+.show {
+  --color: #0077ff;
+  font-family: inherit;
+  display: inline-block;
+  width: 100px;
+  height: 35px;
+  line-height: 2em;
+  overflow: hidden;
+  margin: 20px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: var(--border-radius);
+  position: relative;
+  cursor: pointer;
+}
+
+.show::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.show:hover {
+  color: white;
+}
+
+.show:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+.show:hover::before {
+  top: -30px;
+  left: -30px;
+}

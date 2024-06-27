@@ -1,0 +1,117 @@
+.floating-button {
+  position: fixed;
+
+  background-color: #007bff !important;
+  color: #fff !important;
+  padding: 15px 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  z-index: 100000;
+}
+
+.floating-button:hover {
+  background-color: #0056b3;
+}
+
+/* Optional styles to add some animations */
+.floating-button {
+  transition: transform 0.3s;
+}
+
+.floating-button:hover {
+  transform: scale(1.1);
+}
+
+.lot-creattion-container {
+  min-height: 75vh;
+  /* overflow: hidden; */
+  width: 100%;
+  margin: 45px;
+  background: #fff;
+  position: relative;
+}
+.lot-creattion-container .lot-form {
+  position: absolute;
+  padding: 45px;
+  height: 100%;
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.lot-creattion-container .lot-group {
+  width: 100%;
+  position: relative;
+}
+.lot-creattion-container .lot-form .lot-group .lot-input {
+  /* position: absolute; */
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  /* margin-bottom: 20px; */
+  outline: 0;
+  width: 100%;
+  /* cursor: pointer; */
+  background-color: transparent;
+}
+.lot-creattion-container .lot-form .lot-group select,
+option {
+  cursor: pointer;
+}
+.lot-form .lot-group .lot-input:placeholder-shown + label {
+  top: 10px;
+  background-color: transparent;
+}
+
+.lot-form .lot-group .lot-input:focus {
+  border-color: #3366cc;
+  background-color: #fff;
+}
+
+.lot-form .lot-group label {
+  font-size: 16px;
+  color: rgb(99, 102, 102);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  position: absolute;
+}
+
+.lot-form .lot-group .lot-input:focus + label {
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  color: #3366cc;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.lot-form .lot-group .lot-input-valid:valid + label {
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  color: #3366cc;
+  font-weight: 600;
+  font-size: 14px;
+}
+.ic1 {
+  margin-top: 15px !important;
+}
+
+.lot-form button {
+  background-color: #3366cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lot-form button:hover {
+  background-color: #27408b;
+}

@@ -1,0 +1,460 @@
+/* .form {
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+} */
+
+.observ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  border-radius: var(--border-radius);
+}
+.disabled-observs {
+  visibility: hidden;
+  display: none;
+}
+.next-send {
+  padding-top: 6px;
+  text-align: left;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.next-send .date-title {
+  /* text-decoration: underline; */
+  /* color: #ffc60b; */
+  font-weight: bold;
+}
+.poussinier .next-send {
+  /* border: 1px solid #000; */
+
+  color: #ff6969;
+}
+.poussinier .next-send .date-title {
+  font-weight: bold;
+  color: #ff6000;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 8px;
+}
+
+.options {
+  color: #727681;
+}
+.remove {
+  visibility: hidden;
+}
+.cut {
+  /* background-color: #e0e0e0; */
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 90px;
+}
+
+.cut-short {
+  width: 50px;
+}
+
+.observation-placeholder {
+  color: #727681;
+  /* font-family: sans-serif; */
+  left: 10px;
+  line-height: 14px;
+  pointer-events: none;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 10px;
+  /* background-color: #ecfcff; */
+  padding: 3px 5px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.placeholder {
+  color: #727681;
+  left: 3px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 10px;
+  background-color: #f5f5f5;
+  padding: 3px 1px 4px 5px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.ajouter {
+  /* background-color: #2ab930; */
+  border-radius: 5px;
+  border: 0;
+  box-sizing: border-box;
+  color: #2ab930;
+  cursor: pointer;
+  font-size: 18px;
+  height: 40px;
+  /* margin-top: 30px; */
+  text-align: center;
+  width: 10%;
+  transition: 0.4s ease-in-out;
+}
+.ajouter:hover {
+  width: 12%;
+}
+.delete {
+  margin: 0;
+  border: 0;
+  color: #cc0000;
+  cursor: pointer;
+  font-size: 50px;
+  transition: 0.4s ease-in-out;
+}
+.delete:hover {
+  font-size: 45px;
+}
+/* .ajouter:active {
+  background-color: #1f8b24;
+} */
+
+@media screen and (max-width: 550px) {
+  .form {
+    padding: 0;
+  }
+  .input__container-box {
+    display: block;
+  }
+}
+
+/*
+=============== 
+Checkbox input
+===============
+*/
+
+.check-input-container {
+  height: 40px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #287bff;
+  /* display: grid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkbox-input-container-disabled {
+  border: 1px solid var(--primary-grey);
+  pointer-events: none;
+  color: var(--primary-grey);
+  height: 40px;
+  width: 100%;
+  border-radius: 8px;
+  /* display: grid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox-input {
+  /* position: relative; */
+  width: 10%;
+  height: 60%;
+  margin: 4px 5px;
+  cursor: pointer;
+}
+
+.placehold {
+  color: #727681;
+  line-height: 14px;
+  padding: 3px 5px;
+}
+
+.send-btn {
+  font-size: 18px;
+  background: #628d2a;
+  color: white;
+  padding: 7px 10px;
+  /* padding-left: 0.9em; */
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin: 5px auto;
+}
+
+.send-btn:hover {
+  background: #3b3f36;
+}
+.send-btn:disabled,
+.send-btn:disabled:hover {
+  cursor: not-allowed;
+  background-color: var(--primary-grey);
+}
+.send-btn span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.send-btn svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.send-btn:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.send-btn:hover svg {
+  transform: translateX(2px) rotate(-90deg) scale(1.1);
+}
+
+.send-btn:hover span {
+  transform: translateX(5em);
+}
+
+.send-btn:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(-2px);
+  }
+
+  to {
+    transform: translateY(4px);
+  }
+}
+
+.dot-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+.dot-ellipsis div {
+  position: absolute;
+  /* top: 33px; */
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--dark-blue);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.dot-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.dot-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.dot-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.dot-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+.css-ueukts-MuiButtonBase-root-MuiToggleButton-root {
+  padding: 6px;
+  border-radius: 50%;
+}
+.css-1gjgmky-MuiToggleButtonGroup-root .MuiToggleButtonGroup-grouped {
+  margin-left: -1px;
+  /* border-left: 1px solid transparent; */
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.css-ueukts-MuiButtonBase-root-MuiToggleButton-root.Mui-selected {
+  color: rgba(0, 0, 0, 0.87);
+  /* background-color: rgba(0, 0, 0, 0.08); */
+  border-radius: 50%;
+}
+
+.css-1gjgmky-MuiToggleButtonGroup-root .MuiToggleButtonGroup-grouped {
+  margin-left: 2px !important;
+  /* border-top-left-radius: 0; */
+  border-radius: 50% !important;
+  /* border-left: none !important; */
+  border: 0.5px solid #000 !important;
+  /* background: #000; */
+  /* border-bottom-left-radius: 0; */
+}
+.css-1hxbcsp-MuiButtonBase-root-MuiToggleButton-root.Mui-selected {
+  background: #fee8b0 !important;
+}
+@media (hover: none) {
+}
+.css-15udffk-MuiButtonBase-root-MuiToggleButton-root.Mui-selected {
+  background-color: #fee8b0 !important;
+}
+.feilds-container {
+  background: #e0fbfc;
+  border-radius: var(--border-radius);
+  border: 0.3px solid var(--dark-blue);
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: flex-start;
+  width: calc(100% - 12px);
+}
+.toggle-switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle-label {
+  cursor: pointer;
+}
+.scale-up-ver-top {
+  -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    forwards;
+  animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-7-6 15:59:9
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-ver-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}
+@keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-out-ver-top
+ * ----------------------------------------
+ */
+
+.scale-out-ver-top {
+  -webkit-animation: scale-out-ver-top 0.5s
+    cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: scale-out-ver-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-7-6 16:0:52
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@-webkit-keyframes scale-out-ver-top {
+  0% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+@keyframes scale-out-ver-top {
+  0% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}

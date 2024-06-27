@@ -1,0 +1,78 @@
+.header-card {
+  background: #fff;
+  border-left: 4px solid var(--dark-blue);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: var(--border-radius);
+  width: 100%;
+  height: 100%;
+}
+
+.header-card .card-item-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 15px;
+  gap: 25px;
+}
+.header-card .card-item-content {
+  display: flex;
+  width: 100%;
+}
+.header-card .card-item-content .card-item-footer {
+  display: flex;
+}
+.header-card .card-item-content .moy-age {
+  width: 100%;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 25px;
+  margin-inline: 10px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-card .card-item-content .moy-age span {
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--light-blue);
+  letter-spacing: -0.02em;
+}
+
+.card-slider {
+  grid-column: span 6;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1px;
+}
+.card-slider .swiper {
+  background: #fff;
+  border-left: 4px solid var(--dark-blue);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: var(--border-radius);
+  width: 49% !important;
+}
+
+.chart-swiper {
+  grid-column: span 9;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  width: 100%;
+  background-color: #fff;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  left: 94% !important;
+  width: fit-content;
+  bottom: 2.5%;
+}
+.css-bu39lo-MuiPaper-root {
+  box-shadow: none !important;
+}
+.css-e70qmq .MuiTextField-root {
+  margin: 0 !important;
+}

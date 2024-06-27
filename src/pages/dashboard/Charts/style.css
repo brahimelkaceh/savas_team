@@ -1,0 +1,53 @@
+.sites-switch {
+  background: #d4d4d4;
+}
+.First-chart {
+  width: 100%;
+  height: 80%;
+  position: relative;
+}
+.Mui-selected {
+  border-radius: 4px !important;
+  background: #fff !important;
+  color: #ff6c22 !important;
+  min-height: 0 !important;
+  min-width: 0 !important;
+  padding: 2px 15px !important;
+  /* Shadow Grey / 2dp */
+  box-shadow: 0px 2px 4px 0px rgba(97, 97, 97, 0.2),
+    0px 1px 2px 0px rgba(97, 97, 97, 0.2);
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  min-height: 0 !important;
+  min-width: 0 !important;
+  padding: 1px 4px !important;
+}
+.MuiTabs-flexContainer {
+  border-radius: 4px;
+  background: #c5dcfa80;
+  height: fit-content !important;
+
+  /* Segment Inner */
+  box-shadow: 0px 2px 4px 0px rgba(97, 97, 97, 0.2) inset,
+    0px 1px 2px 0px rgba(97, 97, 97, 0.2) inset;
+  display: flex;
+  padding: 4px !important;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+}
+
+.MuiTabs-indicator {
+  display: none !important;
+}
+
+.css-9iff5q-MuiToggleButtonGroup-root .MuiToggleButtonGroup-grouped {
+  margin-left: -1px;
+  border-radius: 4px !important;
+  border-left: 1px solid rgba(0, 0, 0, 0.12) !important;
+}
+.css-ueukts-MuiButtonBase-root-MuiToggleButton-root {
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  border-radius: 4px !important;
+  padding: 2px 15px !important;
+}
